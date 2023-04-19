@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Donation</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<style>
+ a{
+  color:red;
+  font-size:20px;
+  padding:10px;
+  margin-bottom:20px;
+  float:right;
+}
+
+ h1{
+  margin:20px 30px;
+ color:blueviolet;
+}
+
+p{
+ font-size:20px;
+ color:grey;
+ margin-left:30px;
+}
+
+body{
+	background-image:linear-gradient(to bottom right,orange,white,green);
+}
+
+
+   
+</style>
+
+</head>
+
+
+
+<body>
+  <h1>India needs help!</h1>
+   <p>In such tough times where everyone is struggling,take a moment and help people by just sitting at home.<br>
+   Donate some money and help us to save thousands of life.</p>
+
+		<div class="col-md-4 container bg-default">
+			
+			<h3 class="my-4">
+					Donation
+			</h3>
+			
+			<form>
+
+                                <div class="form-group">
+						<label for="amount">Amount</label>
+						<input type="text" class="form-control" id="amount" required>
+				</div>
+
+				<div class="form-row">
+					<div class="col-md-6 form-group">
+						<label for="firstname">First Name</label>
+						<input type="text" class="form-control" id="firstname" placeholder="First Name">
+						<div class="invalid-feedback">
+							Valid first name is required.
+						</div>
+					</div>
+
+					<div class="col-md-6 form-group">
+						<label for="lastname">Last Name</label>
+						<input type="text" class="form-control" id="lastname" placeholder="Last Name">
+						<div class="invalid-feedback">
+							Valid last name is required.
+						</div>
+					</div>
+				</div>
+
+				
+
+				<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+				</div>
+
+                                <div class="form-group">
+						<label for="email">Phone number</label>
+						<input type="text" class="form-control" id="phone" maxlength='10' required>
+				</div>
+
+				<div class="form-group">
+					<label for="adress">Address(optional)</label>
+					<input type="text" class="form-control" id="adress" placeholder="1234 Main Street" required>
+					<div class="invalid-feedback">
+						Please enter your shipping address.
+					</div>
+				</div>
+
+				
+
+				
+
+				<hr>
+				
+				
+
+				<h4 class="mb-4">Payment</h4>
+				
+				<div class="form-check">
+					<input type="radio" class="form-check-input" id="credit" name="payment-method" checked required>
+					<label for="credit" class="form-check-label">Credit Card</label>
+				</div>
+
+				<div class="form-check">
+					<input type="radio" class="form-check-input" id="debit" name="payment-method" required>
+					<label for="debit" class="form-check-label">Debit Card</label>
+				</div>
+
+				<div class="form-check">
+					<input type="radio" class="form-check-input" id="paypal" name="payment-method"  required>
+					<label for="paypal" class="form-check-label">PayPal</label>
+				</div>
+			
+				<div class="row mt-4">
+					<div class="col-md-6 form-group">
+							<label for="card-name">Name on card</label>
+							<input type="text" class="form-control" id="card-name" placeholder required>
+							<div class="invalid-feedback">
+								Name on card is required
+							</div>
+						</div>
+
+						<div class="col-md-6 form-group">
+							<label for="card-no">Card Number</label>
+							<input type="text" class="form-control" id="card-no" placeholder required>
+							<div class="invalid-feedback">
+								Credit card number is required
+							</div>
+						</div>
+				</div>
+
+				<div class="form-row">
+					<div class="col-md-5 form-group">
+							<label for="expiration">Expire Date</label>
+							<input type="month" class="form-control" id="card-name" placeholder required>
+							<div class="invalid-feedback">
+								Expiration date required
+							</div>
+						</div>
+					
+
+					<div class="col-md-5 form-group">
+							<label for="ccv-no">Security Number(CVV)</label>
+							<input type="password" class="form-control" id="sec-no" placeholder required maxlength='3'>
+							<div class="invalid-feedback">
+								Security code required
+							</div>
+					</div>
+				</div>
+
+					<hr class="mb-4">
+				
+					<button class="btn btn-danger bt-lg btn-block" type="submit">Donate</button>
+			</form>
+		</div><br>
+
+   <a href="main.html">Back to home page</a>
+</body>
+</html>

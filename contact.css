@@ -1,0 +1,84 @@
+*{
+margin:0;
+padding:0;
+}
+nav.r-nav{
+ background:darkred;
+ padding:10px 0;
+ transition:.5s all;
+}
+
+nav .navbar-brand img{
+ height:70px;
+ width:70px;
+ transition:.5s all;
+}
+
+nav .navbar-nav li a{
+ color:white !important;
+ font-size:16px;
+ letterspacing:0.05rem;
+ font-weight:600;
+}
+
+nav .navbar-nav li a:hover{
+ color:grey;
+}
+ 
+nav .navbar-nav li{
+ margin-left:15px;
+}
+
+nav.r-nav.stickyadd{
+ background:#fff !important;
+ padding:15px 0;
+ box-shadow:0 1px 8px 3px rgba(0,0,0,0.05);
+ transition:.5s all ease-in-out;
+}
+
+p{
+color:grey;
+font-size:20px;
+}
+
+
+ 
+form{
+ text-align:center;
+}
+
+input{
+ 
+width:100%;
+}
+
+footer{
+ background-color:darkred;
+ color:white;
+ padding:0 0 20px 0;
+}
+
+.footer-section h3{
+ color:white;
+}
+
+footer li {
+ list-style:none;
+ 
+}
+footer li a {
+ 
+ color:white;
+}
+footer button{
+ background-color:black;
+ color:white;
+}
+
+@media only screen and (max-width:768px){
+ form{
+  text-align:left;
+}
+}
+
+
