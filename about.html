@@ -11,7 +11,7 @@
  h1{
   font-size:70px;
   text-align:center;
-  margin-top:0px;
+  margin-top:150px;
   color:black;  
 }
 h2{
@@ -62,10 +62,18 @@ h3{
       </div><!-- /.container-fluid -->
     </nav>
   </div>
-  <div id="abbg">
+  <!--<div id="abbg">
     <img src="images/bgservice11.jpg">
-  </div>
-  <h1>About Us</h1><br><br>
+  </div>-->
+  <div style="position:relative;">
+    <div id="bg">
+    </div>
+    <div id="para"><b><i>About Us</i></b><br>
+    </div>
+    <!--<button id="in">Log in</button>
+    <button id="up">Sign up</button>-->
+    </div><br><br>
+  <!--<h1>About Us</h1><br><br>-->
   <p>Redefined and emblished.Raw and edgy.Simple and classic.Whatever your style ,Rings of life provides customizable planning services that are uniquely you.
      At rings of life, we help manage your big ideas and your smallest concerns to ensure you are stress-free and enjoying every moment.
      For more than five years, we’ve been working with clients to create exceptional experiences for their wedding day, nonprofit or social gathering.
@@ -199,6 +207,15 @@ If you need to contact us , you can use the details below.<br><br>
       $("#f4").show();
     })
   })
+  $(document).ready(function(){
+  var urls=['images/mainbg.jpg','images/bgservice.jpg','images/weddingv.jpg'];
+  var count=1;
+  $('#bg').css('background-image','url("' + urls[0] + ' ")');
+  setInterval(function(){
+    $('#bg').css('background-image','url("'+urls[count]+'")');
+    count==urls.length-1?count=0:count++;
+  },5000);
+ });
   </script>
 
 </body>

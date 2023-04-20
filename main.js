@@ -17,4 +17,12 @@
     }
   })
 
-
+ $(document).ready(function(){
+  var urls=['images/mainbg.jpg','images/bgservice.jpg','images/weddingv.jpg'];
+  var count=1;
+  $('#bg').css('background-image','url("' + urls[0] + ' ")');
+  setInterval(function(){
+    $('#bg').css('background-image','url("'+urls[count]+'")');
+    count==urls.length-1?count=0:count++;
+  },5000);
+ });

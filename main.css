@@ -49,12 +49,12 @@ nav.r-nav.stickyadd{
 
 
 #bg{
- background-image:url("images/mainbg.jpg");
  background-repeat:no-repeat;
  background-size:cover;
  margin-top:0px;
  height:43.75rem;
  opacity:0.5;
+ transition:0.3s;
  
 }
 
